@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "RSMS Feedback Assistant",
+  "version": "3.0",
+  "description": "Fills the current RSMS feedback form and can step through subjects.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.rajagiritech.ac.in/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+         "https://www.rajagiritech.ac.in/stud/KTU/Student/Feedback.asp*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
