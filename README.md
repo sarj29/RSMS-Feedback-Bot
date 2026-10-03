@@ -5,11 +5,11 @@
 
 > *Because clicking Option 1 seventeen times per subject is a surprisingly time-consuming academic activity.*
 
-A small Firefox extension I made to automate filling out the **RSMS semester feedback forms**.
+A small Firefox extension I made to automate filling out the **RSMS semester and course feedback forms**.
 
 ## Why?
 
-First year, I actually took my time with end/mid-sem feedback. Read the questions, rated teachers properly, even wrote strengths and weaknesses.
+First year, I actually took my time with end/mid-sem and course feedback. Read the questions, rated teachers and courses properly, even wrote strengths and weaknesses.
 
 Then I got lazy.
 
@@ -27,9 +27,13 @@ It's **clicking the same option over and over again for every single subject whe
 
 ## What it does
 
+### Teacher Feedback
 - **Fill Current Subject** — selects Option 1 for all questions and fills the two required text fields with a space.
 - **Run All Subjects** — does the same for every subject and submits each one.
-- **Stop Automation** — stops the process if you change your mind.
+
+### Course Feedback
+- **Run current Course Feedback** — selects **Excellent** for each course-feedback question, waits for the required timer, and moves to the next question.
+- **Stop Automation** — stops the automation if you change your mind.
 
 No AI. No backend. Just some JavaScript and questionable decision-making.
 
@@ -61,22 +65,19 @@ RSMS-Feedback-Bot/manifest.json
 
 ### 3. Use it
 
-Open the RSMS feedback page and click the extension.
+Open the relevant RSMS feedback page and click the extension.
 
-Choose:
-
+**Teacher Feedback**
 - **Fill Current Subject** — current subject only
-- **Run All Subjects** — all subjects
+- **Run All Subjects** — automatically processes all subjects
 - **Stop Automation** — emergency exit
+
+**Course Feedback**
+- **Run Course Feedback** — selects Excellent, waits for the required timer, and moves through the questions automatically
+- **Stop Automation** — stops the automation
 
 ## Disclaimer
 
-This is not meant to replace genuine feedback.
+The feedback system exists for the betterment of students and is a valuable opportunity to share meaningful feedback. If you have something to convey about a course or teacher, take the time to do it.
 
-If you actually want to think about your answers and give meaningful feedback, please do that.
-
-This is just for the people who have reached the end of the semester, have nothing new left to write, and want to get through the form without clicking the same radio button 60 times.
-
-I just automated a small headache.
-
-That's it.
+This project just automates the repetitive clicking of the same radio button n number of times. The actual feedback is still yours to give.

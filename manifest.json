@@ -17,7 +17,8 @@
   "content_scripts": [
     {
       "matches": [
-         "https://www.rajagiritech.ac.in/stud/KTU/Student/Feedback.asp*"
+         "https://www.rajagiritech.ac.in/stud/KTU/Student/Feedback.asp*",
+         "https://www.rajagiritech.ac.in/stud/KTU/Examcf/Exam.asp*"
       ],
       "js": [
         "content.js"

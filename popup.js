@@ -36,3 +36,44 @@ document.getElementById("stop").onclick = async () => {
   const r = await command("stop");
   status(r?.message || "Stopped.");
 };
+
+document
+    .getElementById("startCourseFeedback")
+    .addEventListener("click", async () => {
+
+        const confirmed = confirm(
+            "Start Course Feedback automation?\n\n" +
+            "It will select Excellent for each question " +
+            "and automatically continue through the questions."
+        );
+
+        if (!confirmed) return;
+
+        const [tab] = await chrome.tabs.query({
+            active: true,
+            currentWindow: true
+        });
+
+        await chrome.tabs.sendMessage(tab.id, {
+            action: "startCourseFeedback"
+        });
+
+        window.close();
+    });
+
+
+document
+    .getElementById("stopCourseFeedback")
+    .addEventListener("click", async () => {
+
+        const [tab] = await chrome.tabs.query({
+            active: true,
+            currentWindow: true
+        });
+
+        await chrome.tabs.sendMessage(tab.id, {
+            action: "stopCourseFeedback"
+        });
+
+        alert("Course feedback automation stopped.");
+    });
