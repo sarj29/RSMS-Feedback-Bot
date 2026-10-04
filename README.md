@@ -1,8 +1,6 @@
 # RSMS Feedback Assistant
 
-<img width="423" height="605" alt="image" src="https://github.com/user-attachments/assets/cf556ea0-ac7d-484b-a977-03017bc662ee" />
-
-
+<img width="413" height="661" alt="image" src="https://github.com/user-attachments/assets/b0f2fdf6-41ee-4be6-abdf-4151394580d6" />
 
 > *Because clicking Option 1 seventeen times per subject is a surprisingly time-consuming academic activity.*
 
