@@ -57,11 +57,23 @@
       font-size: 11px;
       color: #666;
     }
+
+    #startCourseFeedback {
+      background: #1677ff;
+      color: #fff;
+    }
+
+    #stopCourseFeedback {
+      background: #c62828;
+      color: #fff;
+    }
   </style>
 </head>
 
 <body>
   <h2>RSMS Feedback Assistant</h2>
+
+  <h3>Semester Feedback</h3>
   <button id="fill">Fill Current Subject</button>
   <button id="submit">Submit Current Subject</button>
   <button id="all">Run All Subjects</button>
@@ -75,14 +87,11 @@
   <hr>
 
   <h3>Course Feedback</h3>
-
-  <button id="startCourseFeedback">
-    Run Course Feedback
-  </button>
-
-  <button id="stopCourseFeedback">
-    Stop Automation
-  </button>
+  <button id="startCourseFeedback">Run Course Feedback</button>
+  <button id="stopCourseFeedback">Stop Automation</button>
+  <div class="note">
+    Selects the first radio option in each question of the selected subject.
+  </div>
   <script src="popup.js"></script>
 </body>
 
